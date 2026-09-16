@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>5 O'Click - Ускорение позиций по продающим запросам</title>
+<style>
+@page { size: 13.333in 7.5in; margin: 0; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#d8d8d8;color:#111}
+body{font-family: Arial, Helvetica, sans-serif;}
+.slide{width:1280px;height:720px;position:relative;overflow:hidden;background:#f7f5ef;padding:44px 66px;page-break-after:always;color:#111}
+.slide:last-child{page-break-after:auto}
+.brand{position:absolute;left:66px;top:28px;font-family:Georgia,'Times New Roman',serif;font-size:29px;font-weight:600;letter-spacing:-.045em;color:#111;line-height:1;white-space:nowrap}
+.kicker{font-size:16px;letter-spacing:.11em;text-transform:uppercase;color:#e21d2f;font-weight:850;line-height:1.15}
+.h1{font-family:Georgia,'Times New Roman',serif;font-size:52px;line-height:1.08;letter-spacing:-.05em;font-weight:850;margin:14px 0 0;color:#111;padding-bottom:6px}
+.h1 .red,.red{color:#e21d2f}
+.sub{font-size:24px;line-height:1.26;color:#3d3a36;font-weight:550;margin-top:18px}
+.top{position:absolute;left:66px;right:66px;top:80px}
+.footer{position:absolute;bottom:21px;left:66px;right:66px;display:flex;justify-content:space-between;align-items:center;font-size:15px;color:#77736b}
+.rule{position:absolute;left:66px;right:66px;bottom:45px;height:1px;background:#c9c7c1}
+.bottom-line{position:absolute;left:66px;right:66px;top:592px;border-top:2px solid #111;padding-top:13px;font-size:23px;line-height:1.18;color:#191919;font-weight:680;letter-spacing:-.015em}
+.bottom-line b{font-weight:850}
+.small-label{font-size:15px;letter-spacing:.10em;text-transform:uppercase;color:#e21d2f;font-weight:850;margin-bottom:10px}
+.card-title{font-size:31px;line-height:1.05;font-weight:850;letter-spacing:-.04em;color:#111}
+.card-text{font-size:22px;line-height:1.19;color:#43403c;font-weight:540;margin-top:10px}
+
+/* 1 */
+.s1 .left{position:absolute;left:66px;top:80px;width:720px}
+.s1 .h1{font-size:44px;max-width:720px}
+.s1 .sub{max-width:700px;margin-top:16px;line-height:1.22}
+.s1 .forwhom{margin-top:16px;border-left:6px solid #e21d2f;padding:13px 18px;background:rgba(226,29,47,.05);font-size:22px;line-height:1.2;font-weight:760;color:#111;max-width:690px}
+.s1 .signal{position:absolute;right:66px;top:86px;width:400px;border-left:2px solid #c9c7c1;padding-left:30px}
+.s1 .signal-title{font-size:25px;line-height:1.12;font-weight:850;margin-bottom:14px;letter-spacing:-.03em}
+.scenario{padding:14px 0 15px;border-top:1px solid #c9c7c1;display:grid;grid-template-columns:40px 1fr;gap:9px;align-items:start}
+.scenario:last-child{border-bottom:1px solid #c9c7c1}
+.scenario .num{font-size:17px;color:#e21d2f;font-weight:900;padding-top:3px}
+.scenario .txt{font-size:23px;line-height:1.14;font-weight:770;letter-spacing:-.02em}
+
+/* 2 */
+.s2 .paths{position:absolute;left:66px;right:66px;top:262px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px}
+.path{min-height:240px;border-top:2px solid #111;padding-top:18px;display:flex;flex-direction:column;justify-content:space-between}
+.path .card-title{font-size:33px}
+.path .tag{margin-top:16px;border:1px solid #e21d2f;color:#e21d2f;padding:8px 10px;font-size:18px;line-height:1.1;font-weight:850;width:max-content;max-width:100%}
+
+/* 3 */
+.s3 .case{position:absolute;left:66px;right:66px;top:250px;display:grid;grid-template-columns:1.02fr .98fr;gap:40px}
+.case-card{border-top:2px solid #111;padding-top:16px}
+.case-card .card-title{font-size:32px}
+.case-card .card-text{font-size:23px;line-height:1.2}
+.mini-table{border-top:2px solid #111;padding-top:2px}
+.mini-row{display:grid;grid-template-columns:1.35fr .6fr .7fr;gap:14px;border-bottom:1px solid #c9c7c1;min-height:52px;align-items:center}
+.mini-row div{font-size:23px;font-weight:760;line-height:1.12}
+.mini-row.head{min-height:38px}
+.mini-row.head div{font-size:14px;color:#e21d2f;text-transform:uppercase;letter-spacing:.1em;font-weight:850}
+.mini-row .now{font-size:26px;font-weight:880;color:#e21d2f}
+
+/* 4 */
+.s4 .ready{position:absolute;left:66px;right:66px;top:252px;display:grid;grid-template-columns:1.16fr .84fr;gap:38px}
+.checklist{border-top:2px solid #111;padding-top:4px}
+.check-item{display:grid;grid-template-columns:42px 1fr;align-items:center;border-bottom:1px solid #c9c7c1;min-height:52px}
+.check{font-size:24px;color:#e21d2f;font-weight:900}
+.check-item .txt{font-size:24px;line-height:1.1;font-weight:780;letter-spacing:-.025em;padding:7px 0}
+.s4 .soft{border-left:6px solid #e21d2f;background:rgba(226,29,47,.05);padding:22px 24px}
+.soft .title{font-size:32px;line-height:1.05;font-weight:850;letter-spacing:-.04em;color:#e21d2f}
+.soft .text{font-size:22px;line-height:1.2;color:#252525;font-weight:660;margin-top:14px}
+
+/* 5 */
+.s5 .criteria{position:absolute;left:66px;top:248px;width:780px;display:grid;grid-template-columns:1fr 1fr;gap:20px 30px}
+.criterion{min-height:126px;border-top:2px solid #111;padding-top:13px}
+.criterion .small-label{font-size:14px;margin-bottom:7px}
+.criterion .card-title{font-size:28px}
+.criterion .card-text{font-size:21px;line-height:1.17;margin-top:8px}
+.s5 .data{position:absolute;right:66px;top:262px;width:300px;border-left:6px solid #e21d2f;padding:20px 0 20px 24px}
+.data .title{font-size:29px;line-height:1.04;color:#e21d2f;font-weight:850;letter-spacing:-.035em}
+.data .big{font-size:34px;line-height:1.03;font-weight:850;letter-spacing:-.045em;margin-top:14px}
+.data .text{font-size:21px;line-height:1.16;color:#45413d;margin-top:14px;font-weight:540}
+
+/* 6 */
+.s6 .timeline{position:absolute;left:66px;right:66px;top:258px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:26px}
+.tstep{border-top:2px solid #111;padding-top:15px;min-height:210px}
+.tstep .when{font-size:15px;color:#e21d2f;text-transform:uppercase;letter-spacing:.10em;font-weight:850;margin-bottom:12px}
+.tstep .title{font-size:29px;line-height:1.05;font-weight:850;letter-spacing:-.035em}
+.tstep .text{font-size:21px;line-height:1.18;color:#45413d;font-weight:540;margin-top:12px}
+
+/* 7 faq */
+.s7 .faq{position:absolute;left:66px;right:66px;top:256px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.faq-card{border-top:2px solid #111;padding-top:16px}
+.faq-card .card-title{font-size:33px}
+.faq-card .card-text{font-size:23px;line-height:1.24;margin-top:14px}
+
+/* 8 price */
+.s8 .price-layout{position:absolute;left:66px;right:66px;top:252px;display:grid;grid-template-columns:.92fr 1.08fr;gap:44px}
+.price-main{background:#111;color:#fff;padding:30px 32px;min-height:262px;display:flex;flex-direction:column;justify-content:space-between}
+.price-main .from{font-size:20px;color:#ff7d87;font-weight:850;text-transform:uppercase;letter-spacing:.1em}
+.price-main .amount{font-size:52px;line-height:1.08;font-weight:900;letter-spacing:-.05em;color:#fff;margin-top:10px;padding-bottom:4px}
+.price-main .note{font-size:22px;line-height:1.2;color:#e8e8e8;font-weight:540;margin-top:16px}
+.price-factors{border-top:2px solid #111;padding-top:4px}
+.factor{display:grid;grid-template-columns:42px 1fr;align-items:start;border-bottom:1px solid #c9c7c1;min-height:60px}
+.factor .n{font-size:18px;color:#e21d2f;font-weight:900;padding-top:12px}
+.factor .txt{font-size:22px;line-height:1.15;font-weight:740;padding:11px 0;color:#111}
+
+/* 9 final */
+.s9 .final{position:absolute;left:66px;right:66px;top:250px;display:grid;grid-template-columns:1fr 1fr;gap:42px}
+.we-do{border-top:2px solid #111;padding-top:16px}
+.we-do .title{font-size:31px;line-height:1.04;font-weight:850;letter-spacing:-.035em;color:#111;margin-bottom:14px}
+.do-item{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;border-bottom:1px solid #c9c7c1;padding:9px 0}
+.do-item .n{width:30px;height:30px;border-radius:50%;background:#e21d2f;color:#fff;text-align:center;line-height:30px;font-weight:900;font-size:17px}
+.do-item .txt{font-size:23px;line-height:1.14;font-weight:720;color:#111}
+.cta-box{background:#111;color:#fff;padding:24px 28px;display:flex;flex-direction:column;justify-content:space-between;min-height:238px}
+.cta-box .title{font-size:34px;line-height:1.05;font-weight:850;letter-spacing:-.04em;color:#ff6170}
+.cta-box .text{font-size:22px;line-height:1.18;color:#f0f0f0;font-weight:540;margin-top:14px}
+.button{background:#e21d2f;color:#fff;text-align:center;font-size:24px;font-weight:850;padding:13px 16px;margin-top:14px}
+.cta-box .after{font-size:19px;line-height:1.2;color:#c9c5bf;font-weight:540;margin-top:10px}
+</style>
+</head>
+<body>
+
+<section class="slide s1">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="left">
+   <div class="kicker">Суть предложения</div>
+   <div class="h1">Клиенты вас ищут<br>но первыми видят <span class="red">конкурентов</span></div>
+   <div class="sub">Ваш сайт уже продвигается и обращения из поиска есть. Но важные запросы стоят в первой тридцатке, а не наверху - и выбирают из тех, кого видят первыми</div>
+   <div class="forwhom">Предложение для бизнеса с дорогой услугой или товаром, где один лишний звонок уже имеет значение</div>
+ </div>
+ <aside class="signal">
+   <div class="signal-title">Узнаёте свою ситуацию</div>
+   <div class="scenario"><div class="num">01</div><div class="txt">Важные запросы месяцами стоят рядом с первой страницей</div></div>
+   <div class="scenario"><div class="num">02</div><div class="txt">Платная реклама дорожает, каждый переход снова оплачивается</div></div>
+   <div class="scenario"><div class="num">03</div><div class="txt">В некоторых нишах один переход стоит тысячи рублей</div></div>
+   <div class="scenario"><div class="num">04</div><div class="txt">Конкурент выше именно по запросам, после которых звонят</div></div>
+ </aside>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>01 / 09</span></div>
+</section>
+
+<section class="slide s2">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="top"><div class="kicker">Три способа получить этот спрос</div><div class="h1">Можно ждать, покупать рекламу<br>или ускорять <span class="red">готовые запросы</span></div></div>
+ <div class="paths">
+   <div class="path">
+     <div><div class="small-label">путь 01</div><div class="card-title">Ждать обычное продвижение</div><div class="card-text">Фундамент продолжает работать, но следующий рост может занять месяцы</div></div>
+     <div class="tag">ничего не меняем</div>
+   </div>
+   <div class="path">
+     <div><div class="small-label">путь 02</div><div class="card-title">Увеличить платную рекламу</div><div class="card-text">Поток появляется сразу, но каждый переход снова оплачивается и со временем дорожает</div></div>
+     <div class="tag">быстро, но дорого</div>
+   </div>
+   <div class="path">
+     <div><div class="small-label">путь 03</div><div class="card-title">Поднять готовые запросы выше</div><div class="card-text">Использовать то, что уже создано: сайт, страницы и запросы, которые близко к первым строкам</div></div>
+     <div class="tag">работает на подготовленном сайте</div>
+   </div>
+ </div>
+ <div class="bottom-line"><b>Переход из поиска не оплачивается повторно</b>, в отличие от рекламного</div>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>02 / 09</span></div>
+</section>
+
+<section class="slide s3">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="top"><div class="kicker">Как это выглядит на практике</div><div class="h1">Кто выше в поиске<br>тот чаще попадает в <span class="red">короткий список</span></div></div>
+ <div class="case">
+   <div class="case-card">
+     <div class="small-label">как выбирает человек</div>
+     <div class="card-title">Открывает первые варианты и сравнивает</div>
+     <div class="card-text">Он смотрит цены, условия и отзывы у тех, кого увидел сразу, и оставляет заявку там, где предложение понятно</div>
+     <div class="card-text red">До остальных он обычно не доходит</div>
+   </div>
+   <div class="case-card">
+     <div class="small-label">пример на условной клинике</div>
+     <div class="mini-table">
+       <div class="mini-row head"><div>показатель</div><div>было</div><div>стало</div></div>
+       <div class="mini-row"><div>место в поиске</div><div>12</div><div class="now">3</div></div>
+       <div class="mini-row"><div>людей на странице</div><div>90</div><div class="now">230</div></div>
+       <div class="mini-row"><div>заявки и звонки</div><div>7</div><div class="now">18</div></div>
+     </div>
+   </div>
+ </div>
+ <div class="bottom-line"><b>Цифры условные</b> - в расчёте берём ваши запросы и вашу статистику</div>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>03 / 09</span></div>
+</section>
+
+<section class="slide s4">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="top"><div class="kicker">При каких условиях это работает</div><div class="h1">Сработает ли это у вас<br>видно по <span class="red">пяти признакам</span></div></div>
+ <div class="ready">
+   <div class="checklist">
+     <div class="check-item"><div class="check">&#10003;</div><div class="txt">Есть страницы услуг или товаров, на которые можно приводить людей</div></div>
+     <div class="check-item"><div class="check">&#10003;</div><div class="txt">Важные запросы уже видны в поиске - в первой тридцатке</div></div>
+     <div class="check-item"><div class="check">&#10003;</div><div class="txt">По этим запросам уже бывают заявки или звонки</div></div>
+     <div class="check-item"><div class="check">&#10003;</div><div class="txt">Страница понятно объясняет предложение</div></div>
+     <div class="check-item"><div class="check">&#10003;</div><div class="txt">Сайт выглядит достойно рядом с конкурентами</div></div>
+   </div>
+   <div class="soft">
+     <div class="title">Если основы пока не хватает</div>
+     <div class="text">Сайту, который почти не виден в поиске, сначала нужно базовое продвижение - и только потом ускорение</div>
+   </div>
+ </div>
+ <div class="bottom-line"><b>Проверять самому не нужно</b> - мы смотрим сайт и статистику сами и показываем, что получилось</div>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>04 / 09</span></div>
+</section>
+
+<section class="slide s5">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="top"><div class="kicker">Какие запросы берём в работу</div><div class="h1">В работе только запросы<br>после которых к вам <span class="red">обращаются</span></div></div>
+ <div class="criteria">
+   <div class="criterion"><div class="small-label">01</div><div class="card-title">Человек уже выбирает, где купить</div><div class="card-text">Запрос похож на реальный выбор услуги, товара или подрядчика</div></div>
+   <div class="criterion"><div class="small-label">02</div><div class="card-title">Позиция уже близко</div><div class="card-text">Обычно это запросы с 4 по 30 место в поиске</div></div>
+   <div class="criterion"><div class="small-label">03</div><div class="card-title">По ним уже обращаются</div><div class="card-text">В статистике видно, после каких запросов люди оставляют заявку или звонят</div></div>
+   <div class="criterion"><div class="small-label">04</div><div class="card-title">Страница готова принять посетителя</div><div class="card-text">На ней понятно, что предлагают и как обратиться</div></div>
+ </div>
+ <div class="data"><div class="title">Как понимаем</div><div class="big">Смотрим данные сайта</div><div class="text">Позиции, переходы из поиска и обращения - заявки и звонки</div></div>
+ <div class="bottom-line"><b>Список запросов вы утверждаете до старта</b> - без вашего согласия в работу ничего не берём</div>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>05 / 09</span></div>
+</section>
+
+<section class="slide s6">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="top"><div class="kicker">Как идёт работа</div><div class="h1">Сначала проверка на малом<br>потом <span class="red">полная программа</span></div></div>
+ <div class="timeline">
+   <div class="tstep"><div class="when">шаг 01</div><div class="title">Замеряем до старта</div><div class="text">Фиксируем выбранные запросы и их места в поиске до начала работ</div></div>
+   <div class="tstep"><div class="when">шаг 02</div><div class="title">Тест на малом списке</div><div class="text">Начинаем с минимальной интенсивности и следим, как сайт реагирует</div></div>
+   <div class="tstep"><div class="when">шаг 03</div><div class="title">Оцениваем тест</div><div class="text">Смотрим, какая доля запросов выросла. Сайт не реагирует - на полную программу не переходим</div></div>
+   <div class="tstep"><div class="when">шаг 04</div><div class="title">Ведём программу</div><div class="text">Согласованный список, регулярные отчёты и контрольные точки, где решаем вместе: продолжать, расширять или остановиться</div></div>
+ </div>
+ <div class="bottom-line"><b>Сроки теста и программы фиксируем до старта</b> - они зависят от ниши и списка запросов</div>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>06 / 09</span></div>
+</section>
+
+<section class="slide s7">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="top"><div class="kicker">Частые вопросы</div><div class="h1">Два вопроса<br>которые задают <span class="red">все</span></div></div>
+ <div class="faq">
+   <div class="faq-card">
+     <div class="small-label">вопрос 01</div>
+     <div class="card-title">Это безопасно для сайта?</div>
+     <div class="card-text">Работа начинается с минимальной интенсивности и усиливается постепенно, только если сайт реагирует спокойно. Реакция контролируется всё время: видим нежелательное движение - снижаем темп или останавливаемся</div>
+   </div>
+   <div class="faq-card">
+     <div class="small-label">вопрос 02</div>
+     <div class="card-title">Придётся платить постоянно?</div>
+     <div class="card-text">Не всегда. Если сайт хорошо оптимизирован и закрепился наверху на несколько месяцев, позиции часто держатся сами. В нишах с агрессивной конкуренцией нужна поддержка - это видно по данным, и это обсуждается заранее</div>
+   </div>
+ </div>
+ <div class="bottom-line"><b>Остальные вопросы разбираем на встрече</b> - спрашивайте прямо, отвечаем без тумана</div>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>07 / 09</span></div>
+</section>
+
+<section class="slide s8">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="top"><div class="kicker">Стоимость</div><div class="h1">Цена считается под список запросов<br>и длительность <span class="red">программы</span></div></div>
+ <div class="price-layout">
+   <div class="price-main">
+     <div><div class="from">старт</div><div class="amount">от [СУММА]<br>в месяц</div></div>
+     <div class="note">Итоговая стоимость считается после того, как согласуем запросы и страницы</div>
+   </div>
+   <div class="price-factors">
+     <div class="factor"><div class="n">01</div><div class="txt">Сколько запросов берём в работу</div></div>
+     <div class="factor"><div class="n">02</div><div class="txt">Поисковая система - Яндекс и Google считаются отдельно</div></div>
+     <div class="factor"><div class="n">03</div><div class="txt">Какой срок программы нужен для оценки</div></div>
+     <div class="factor"><div class="n">04</div><div class="txt">Какой объём отчётности согласуем</div></div>
+   </div>
+ </div>
+ <div class="bottom-line"><b>Точную сумму называем после того, как посмотрим сайт</b> и согласуем список запросов</div>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>08 / 09</span></div>
+</section>
+
+<section class="slide s9">
+ <div class="brand">5&nbsp;O&rsquo;Click</div>
+ <div class="top"><div class="kicker">Следующий шаг</div><div class="h1">Проверку делаем мы<br>и показываем <span class="red">конкретные запросы</span></div></div>
+ <div class="final">
+   <div class="we-do">
+     <div class="title">Что вы получаете на старте</div>
+     <div class="do-item"><div class="n">1</div><div class="txt">Смотрим сайт и статистику</div></div>
+     <div class="do-item"><div class="n">2</div><div class="txt">Показываем запросы, где есть смысл ускоряться</div></div>
+     <div class="do-item"><div class="n">3</div><div class="txt">Считаем стоимость стартовой программы</div></div>
+   </div>
+   <div class="cta-box">
+     <div>
+       <div class="title">Если мы пришли с таким предложением</div>
+       <div class="text">Скорее всего, у сайта уже есть основания для работы. Осталось проверить список запросов и условия запуска</div>
+     </div>
+     <div>
+       <div class="button">Запросить персональный расчёт</div>
+       <div class="after">От вас нужны только доступы к статистике сайта</div>
+     </div>
+   </div>
+ </div>
+ <div class="bottom-line"><span class="red"><b>Граница ответственности:</b></span> наша зона - чтобы человек нашёл вас в поиске и обратился: оставил заявку или позвонил. После обращения работает ваш отдел продаж</div>
+ <div class="rule"></div><div class="footer"><span>Ускорение позиций по продающим запросам</span><span>09 / 09</span></div>
+</section>
+
+</body></html>
